@@ -38,7 +38,7 @@ Rollbar::log(
     'testing extra data',
     array("some_key" => "some value") // key-value additional data
 );
-        
+
 // If you want to check if logging with Rollbar was successful
 $response = Rollbar::log(Level::info(), 'testing wasSuccessful()');
 if (!$response->wasSuccessful()) {
@@ -62,7 +62,7 @@ Add `rollbar/rollbar` to your `composer.json`:
 ```json
 {
     "require": {
-        "rollbar/rollbar": "~1.0.1"
+        "rollbar/rollbar": "~1.0"
     }
 }
 ```
@@ -158,7 +158,7 @@ use Rollbar\Payload\Level;
 
 Rollbar::log(Level::warning(), 'could not connect to mysql server');
 Rollbar::log(
-    Level::info(), 
+    Level::info(),
     'Here is a message with some additional data',
     array('x' => 10, 'code' => 'blue')
 );
