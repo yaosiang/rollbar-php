@@ -274,7 +274,7 @@ class DefaultsTest extends BaseRollbarTest
                 $option == 'logger' ||
                 $option == 'person' ||
                 $option == 'person_fn' ||
-                $option == 'scrub_whitelist' ||
+                $option == 'scrub_safelist' ||
                 $option == 'proxy' ||
                 $option == 'include_raw_request_body' ||
                 $option == 'verbose_logger' ||
